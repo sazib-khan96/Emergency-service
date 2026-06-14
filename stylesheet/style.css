@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* js for class list add or remove  */
+
+.copied {
+  background-color: rgba(164, 164, 164, 0.375);
+  color: white;
+}
+/* nav bar section =========== */
+.nav_container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.nav_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.logo_container img {
+  width: 50px;
+  height: 50px;
+}
+.logo_container h1 {
+  font-size: 18px;
+  line-height: 20px;
+}
+.left_side_container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon_item img {
+  width: 20px;
+  height: 20px;
+}
+.icon_item button {
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 400;
+  width: 100px;
+  background-color: rgba(41, 128, 0, 0.106);
+}
+.icon_item button span {
+  font-size: 16px;
+}
+.icon_item .copy-Btn {
+  background-color: green;
+  color: aliceblue;
+}
+
+/* hero_container  */
+.hero_container {
+  background: #013626;
+  background: linear-gradient(
+    90deg,
+    rgba(1, 54, 38, 1) 0%,
+    rgba(1, 99, 69, 0.72) 54%,
+    rgba(1, 54, 43, 1) 100%
+  );
+  padding: 50px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero_container img {
+  justify-content: center;
+}
+.hero_container h1 {
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+.hero_container p {
+  color: aliceblue;
+  font-size: 16px;
+}
+
+/* service_container =============== */
+.service_container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 15px;
+  margin: 50px auto;
+}
+.all_service_container
+ {
+  width: 900px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px 15px;
+}
+
+.history_container {
+  width: 300px;
+padding:  10px;
+}
+.all_service_container .card {
+  padding: 25px 15px;
+  box-shadow: 0px 5px 10px 0 rgba(1, 54, 43, 0.15);
+  border-radius: 10px;
+  transition: 0.4s all;
+
+}
+.card .img_container img {
+  width: 40px;
+}
+.card .img_container {
+  display: flex;
+  justify-content: space-between;
+}
+.card .content_container h3 {
+  font-size: 20px;
+  color: rgb(19, 19, 19);
+  margin: 8px 0px;
+  font-size: 16px;
+}
+.card .content_container h1 {
+  font-size: 35px;
+  color: rgb(19, 19, 19);
+  margin-top: 8px;
+  font-size: 16px;
+}
+/* .card .content_container p{
+    color: #5c5c5c;
+    font-size: 12px;
+} */
+.card .content_container .pra {
+  font-size: 14px;
+  color: rgb(19, 19, 19);
+  margin-top: 15px;
+  border-radius: 50px;
+  background-color: rgba(192, 255, 214, 0.339);
+  padding: 2px 15px;
+  display: inline-block;
+  color: #5c5c5c;
+}
+
+.card .btn_container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card .btn_container button {
+  padding: 5px 30px;
+  color: #5c5c5c;
+  border: 1px solid #5c5c5c31;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+ .card .btn_container .call_btn{
+    background-color: green;
+    color: aliceblue;
+    transition: 0.4s all;
+}
+.card .btn_container .call_btn:hover{
+  background-color: rgb(24, 223, 2);
+  transform: translate(2.9px);
+}
+ .card:hover i{
+  color: red;
+ }
+.all_service_container .card:hover{
+
+    transform: scale(1.05);
+}
+
+/* history_container ============== */
+.history_container {
+    box-shadow: -3px 3px 10px 0 rgba(1, 54, 43, 0.15);
+}
+.history_container .history_btn{
+   /* display: grid;
+   grid-template-columns: auto auto;
+   max-width: 100%; */
+   display: flex;
+   gap: 20px;
+
+
+}
+.history_btn{
+  margin-bottom: 10px;
+}
+
+.history_btn button:first-child{
+    flex: 2;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    text-align: left;
+}
+.history_btn button:last-child{
+    padding: 8px 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.history_child{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeeea5;
+  padding: 10px ;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px 0 rgba(106, 106, 106, 0.1);
+}
+.history_parent .history_child h5{
+margin: 5px 0px;
+}
